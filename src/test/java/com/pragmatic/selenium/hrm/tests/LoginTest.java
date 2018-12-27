@@ -9,6 +9,7 @@ import org.testng.annotations.Test;
 public class LoginTest extends TestBase{
     @Test
     public void testLoginWithBlankUsername(){
+        //
         LoginPage loginPage= PageFactory.initElements(driver,LoginPage.class);
         loginPage.txtUsername("").txtPassword("Ptl@#321").clickLoginFailur();
         Assert.assertEquals(loginPage.getError(),"Username cannot be empty");
