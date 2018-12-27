@@ -1,0 +1,24 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="ptl-hrm">
+
+    <test name="test1">
+        <packages>
+            <package name="com.pragmatic.selenium.testng"/>
+        </packages>
+
+    </test>
+    <test name="test2">
+        <classes>
+            <class name="com.pragmatic.selenium.testng.TestngExample3"/>
+            <class name="com.pragmatic.selenium.testng.TestngExample3"/>
+            <class name="com.pragmatic.selenium.testng.TestngExample3"/>
+            <class name="com.pragmatic.selenium.testng.TestngExample3"/>
+        </classes>
+    </test>
+    <listeners>
+        <listener class-name="org.uncommons.reportng.HTMLReporter"/>
+        <listener class-name="org.uncommons.reportng.JUnitXMLReporter"/>
+    </listeners>
+
+</suite>
